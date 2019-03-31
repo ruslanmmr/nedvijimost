@@ -1,0 +1,29 @@
+.place.block
+  h3.title Расположение
+  .place__container
+    .tabpanel(role='tabpanel')
+      // Nav tabs
+      .media_nav
+        ul.nav.nav-tabs.tabs(role='tablist')
+          li.active
+            a(role='map', href='#map', data-latitude='55.859003', data-longitude='37.417553', data-map-id='mapObject', data-map-load='true', data-toggle='tab')
+              span.s-map
+              |  Карта
+          li
+            a(href='#panorama', role='panorama', data-latitude='55.859003', data-longitude='37.417553', data-map-id='mapPanorama', data-toggle='tab')
+              span.s-view
+              |  Панорама
+          li
+            a(href='#local', role='national', data-latitude='55.859003', data-longitude='37.417553', data-map-id='mapNational', data-toggle='tab')
+              span.s-near
+              |  Рядом
+      #content.tab-content
+        #map.tab-pane.tab-pane_active
+          .media_map
+            #mapObject.tab-pane__content
+        #panorama.tab-pane
+          .media_slider
+            #mapPanorama.tab-pane__content
+        #local.tab-pane
+          .media_map
+            #mapNational.tab-pane__content

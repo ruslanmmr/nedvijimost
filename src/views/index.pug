@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+  body
+    include blocks/header
+    main.main
+      include blocks/home
+      include blocks/about
+      include blocks/media
+      include blocks/place
+      include blocks/offer
+      include blocks/other-offers
+      include blocks/feedback
+      //popups
+      .popup(id='popup1').sl--scrollable
+        .popup__overlay
+        .popup__container
+          .popup__content
+            button.popup__close
+              i.fas.fa-times
+            h3.title.popup__title Перезвонить Вам?
+            form(action="").form.row
+              .form__group.col-xl-12.form__padding
+                input(type="text" placeholder="Ваше имя*" required).form__input.form__input_style2
+              .form__group.col-xl-12.form__padding
+                input(type="text" placeholder="Ваш телефон*" required).form__input.form__input_style2.phone-input
+              .form__group.col-xl-12.form__padding
+                input(type="email" placeholder="Ваша эл. почта" required).form__input.form__input_style2
+              .form__group.col-xl-12.form__padding
+                span.form__text Нажимая кнопку "Получить предложение", я соглашаюсь с 
+                  a(href="#") Политикой конфиденциальности
+              .form__group.form__group_submit.col-xl-12
+                button(type='submit').button.button_style1.form__button перезвоните мне!
+    include blocks/footer
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="https://maps.api.2gis.ru/2.0/loader.js?lazy=true")
+    script(src="js/map.min.js") 
+    script(src="js/libs.min.js")                  
+    script(src="js/common.min.js")

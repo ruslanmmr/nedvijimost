@@ -1,0 +1,134 @@
+.home {
+  padding-top: 164px;
+  color: #fff;
+  &__container {
+    padding: 70px 0 150px 0;
+    height: 100%;
+    align-items: center;
+  }
+  &__title {
+    font-weight: bold;
+    margin: 0;
+    font-size: 50px;
+  }
+  &__section {
+    &_info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__adress {
+    padding: 0.5em 0;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  &__price {
+    font-weight: bold;
+    span {
+      font-size: 50px;
+    }
+    font-size: 30px;
+  }
+  &__button {
+    margin-top: 90px;
+    padding: 0 25px;
+  }
+  &__images {
+    position: relative;
+    padding: 0 0 60px 60px;
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 74%
+    }
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:first-child {
+    }
+    &:last-child {
+      width: 55%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media all and(max-width: 1200px) {
+  .home__title {
+    font-size: 42px;
+  }
+  .home__adress {
+    font-size: 26px;
+  }
+  .home__price {
+    span {
+      font-size: 42px;
+    }
+  }
+}
+@media all and(max-width: 768px) {
+  .home__section_info {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .home__button {
+    margin-top: 40px;
+  }
+  .home__images {
+    display: flex;
+    padding: 0;
+  }
+  .home__image {
+    width: auto;
+    flex: 1 1 100%;
+    margin: 0 15px 0 0;
+  }
+  .home__image:last-child {
+    position: relative;
+    margin: 0 0 0 15px;
+  }
+  .home__container {
+    padding-top: 55px;
+  }
+}
+@media all and(max-width: 576px) {
+  .home__images {
+    flex-wrap: wrap;
+  }
+  .home__image {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+  .home__image:last-child {
+    margin: 25px 0 0 0;
+  }
+  .home__title {
+    font-size: 32px;
+  }
+  .home__adress {
+    font-size: 24px;
+  }
+  .home__price {
+    font-size: 26px;
+    span {
+      font-size: 32px;
+    }
+  }
+  .home__button {
+    width: 100%;
+  }
+}

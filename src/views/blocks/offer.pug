@@ -1,0 +1,17 @@
+.offer.background.block
+  .background__image.lazy(data-src='img/backgrounds/bg-form.jpg')
+  .container
+    h3.title.title_white Хотите получить персональное предложение?
+    .offer__container 
+      form(action="").form.row
+        .form__group.col-xl-4.col-sm-12.form__padding
+          input(type="text" placeholder="Ваше имя*" required).form__input
+        .form__group.col-xl-4.col-sm-12.form__padding
+          input(type="text" placeholder="Ваш телефон*" required).form__input.phone-input
+        .form__group.col-xl-4.col-sm-12.form__padding
+          input(type="email" placeholder="Ваша эл. почта" required).form__input
+        .form__group.col-xl-12.form__padding
+          span.form__text Нажимая кнопку "Получить предложение", я соглашаюсь с 
+            a(href="#") Политикой конфиденциальности
+        .form__group.form__group_submit.col-xl-4.col-md-7.col-12
+          button(type='submit').button.button_style1.form__button получить предложение

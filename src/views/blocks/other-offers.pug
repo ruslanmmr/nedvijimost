@@ -1,0 +1,49 @@
+mixin slide()
+  .other-offers-slide
+    a(href="#").other-offers-slide__container
+      img(alt="").lazy&attributes(attributes)
+      .other-offers-slide__content
+        .other-offers-slide__title.other-offers-slide__text Продам 2-комн. кв.
+        .other-offers-slide__price 8 900 000 руб. общ. ст.
+        .other-offers-slide__info.other-offers-slide__text Площадь: 38.3 м2 / 27.2 / 9.2г Химки, ул Германа Титова, д.5к2
+.other-offers.block
+  .container.container_slider
+    h3.title Другие предложения агента
+    .other-offers__container
+      .other-offers-nav
+        ul.other-offers-nav__list
+          li.other-offers-nav__item.other-offers-nav__item_active Квартиры, комнаты
+          li.other-offers-nav__item Дома, участки
+      .other-offers__tabs
+        .other-offers__tab.other-offers__tab_active
+          .slider
+            button.slider__prev
+              i.fas.fa-chevron-left
+            button.slider__next
+              i.fas.fa-chevron-right
+            .slider__container
+              .other-offers__slider
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+                +slide()(data-src="img/images/image5.jpg")
+        .other-offers__tab
+          .slider
+            button.slider__prev
+              i.fas.fa-chevron-left
+            button.slider__next
+              i.fas.fa-chevron-right
+            .slider__container
+              .other-offers__slider
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+                +slide()(data-src="img/images/image2.jpg")
+      .other-offers__button
+        a(href="#").button.button_style2 все квартиры и комнаты

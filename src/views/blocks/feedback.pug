@@ -1,0 +1,32 @@
+.feedback.background.block
+  .background__image.lazy(data-src='img/backgrounds/bg-feedback.jpg')
+  .container 
+    h3.title.title_white Обратная связь
+    .feedback__container
+      form(action="").form.row
+        .form__section.col-xl-8.col-sm-12
+          .form__section-container.row
+            .form__group.col-xl-6.col-sm-12.form__padding
+              input(type="text" placeholder="Ваше имя*" required).form__input
+            .form__group.col-xl-6.col-sm-12.form__padding
+              input(type="text" placeholder="Ваш телефон*" required).form__input.phone-input
+            .form__group.col-xl-6.col-sm-12.form__padding
+              input(type="email" placeholder="Ваша эл. почта" required).form__input
+            .form__group.col-xl-6.col-sm-12.form__padding
+              .form__select
+                select(required).form__input.form__input_select
+                  option -выбрать-
+                  option value
+                  option value
+                span.form__select-item
+                  i.fas.fa-angle-down
+        .form__section.form__section_textarea.form__padding.col-xl-4.col-sm-12
+          .form__section-container.row
+            .form__group.col-xl-12
+              textarea(type="email" placeholder="Текст сообщения" required).form__input.form__input_textarea
+        .form__group.form__padding.col-xl-12
+          span.form__text Нажимая кнопку "Получить предложение", я соглашаюсь с 
+            a(href="#") Политикой конфиденциальности
+        .form__group.form__group_submit.col-xl-4.col-md-7.col-12
+          button(type='submit').button.button_style1.form__button Отправить
+      
