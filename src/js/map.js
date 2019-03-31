@@ -1,21 +1,5 @@
 $(document).ready(function () {
-  visibleMaps();
-});
-$(document).scroll(function () {
-	visibleMaps();
-});
-var flag = true;
-function visibleMaps() {
-	var s_top = $("html, body").scrollTop(),
-			o_block = $(".place__container").offset().top,
-			v_height = $(window).height();
-	if(s_top > o_block - v_height && flag){
-		maps();
-		flag = false;
-	}
-}
-function maps() {
-	$(document).on("click", "[data-media]", function () {
+  $(document).on("click", "[data-media]", function () {
 		if ($(this).hasClass("active")) {
 			return false
 		}
@@ -93,4 +77,4 @@ function maps() {
 			})
 		}
 	});
-}
+});
